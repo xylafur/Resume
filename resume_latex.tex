@@ -1,0 +1,151 @@
+
+\documentclass{article}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[papersize={8.5in,11in},margin=1in]{geometry}
+
+\hyphenpenalty=10000
+
+\pagenumbering{gobble}
+\titleformat{\section}
+{\large\bfseries} {}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}
+{\normalsize\bfseries}
+{$\bullet$}
+{0em}
+{}
+
+\titleformat{\subsubsection}[runin]
+{\small\bfseries}
+{}
+{0em}
+{}
+
+\titlespacing{\subsubsection}
+{0em}{0.5em}{1em}
+
+\titlespacing{\subsection}
+{0em}{0.75em}{0em}
+
+\titlespacing{\section}
+{0em}{0.8em}{0.25em}
+
+\renewcommand{\maketitle}{
+\begin{center}
+{\Large\bfseries\theauthor}
+\vspace{.25em}
+
+\begin{center}
+\begin{tabular}{ r l c r l }
+ \textbf{email} & raymond@sutrisno.me & --- & \textbf{phone} & 909 706 1288 \\
+ \textbf{github} & tetrovolt & --- & \textbf{linkedin} & in/tetrovolt
+\end{tabular}
+\end{center}
+
+\end{center}
+}
+
+\title{R\'esum\'e}
+\author{Raymond A. Sutrisno}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Education}
+\subsection{University of Houston (2016 - 2020) \textbf{GPA}{3.94}}
+\textbf{Major}: Bachelors of Computer Science, \textbf{Minor}: Mathematics
+
+\section{Skills}
+\begin{tabular}{p{5cm} l}
+    \textbf{Front-End Technologies} & HTML, CSS \\
+    \textbf{Back-End Technologies} & NodeJS, Express, Postgresql \\
+    \textbf{Machine Learning} & ScikitLearn, Keras, Tensorflow, numpy, pandas, OpenCV \\
+    \textbf{Programming Languages} & Python, Java, C++, JavaScript  \\
+    \textbf{Tools} & bash, git, make, linux/unix, \LaTeX, matlab
+\end{tabular}
+
+\section{Projects Experience}
+\subsection{Reamer IP Bot\textbf{(Spring 2018)}}
+\noindent{$\ \bullet$} Discord bot used for WAN ip retrieval for house.
+
+\noindent{$\ \bullet$} Used to circumvent needing a static ip business plan from internet provider.
+
+\noindent{$\ \bullet$} Works as both a discord bot with command and a http server with JSON api.
+
+\noindent{$\ \bullet$} \textbf{project-link:} github.com/TetroVolt/ReamerHouseBot
+
+\subsection{Java Ray Tracer \textbf{(Spring 2018)}}
+\noindent{$\ \bullet$} Ray tracer rendering demo written Java.
+
+\noindent{$\ \bullet$} Main goals were to simulate refraction from transparent objects and reflection geometry.
+
+\noindent{$\ \bullet$} \textbf{project-link:} github.com/TetroVolt/Java-RayTracer
+
+\subsection{Expressions Evaluator}
+\noindent Simple Mathematical Expression Evaluator written in Java. Written without
+regex for tokenization. Uses reverse polish notation.
+
+\noindent{$\ \bullet$}\textbf{project-link:} "github.com/TetroVolt/Expressions
+
+\section{Job Experience}
+\begin{flushleft}
+\begin{tabular}{p{12.5cm} p{2.5cm}}
+{$\bullet$}\textbf{Teaching Assistantships, \textit{University of Houston}}
+
+    $\ \ \bullet$\textbf{Advanced Machine Learning} COSC 7462 (for Graduates)(Spring 2019)
+
+    $\ \ \bullet$\textbf{Introduction to Computer Science} COSC 1306 (for Undergrads)(Fall 2018)
+
+    $\ \ \bullet$\textbf{Artificial Intelligence} COSC 4368 (for Undergrads)(Spring 2018)
+
+    $\ \ \bullet$\textbf{Machine Learning} COSC 6342 (for Graduates)(Fall 2017)
+    & \textbf{Fall 2018, Spring 2018, Fall\ \ \ \ \ \ \ 2017} \\[0.75cm]
+
+
+{$\bullet$}\textbf{National Science Foundation Research Assistant Internship, \textit{University of Houston}}
+
+    $\ \ \bullet$ Topic: Image Classification of Dewetting Microscopy
+
+    $\ \ \bullet$ Implemented image processing techniques enhance and extract features
+    from microscopy images of polymer dewetting. 
+
+    $\ \ \bullet$ Techniques formalized into preprocessing pipeline for machine learning.
+
+    $\ \ \bullet$ Trained and tested various models such as SVM, Neural Networks, Random Forest.
+
+    $\ \ \bullet$ \textbf{project-link}: github.com/gtoti/Summer2018REU
+
+    & \textbf{Summer 2018}
+    \\[0.75cm]
+
+
+{$\bullet$}\textbf{Research Assistant, \textit{University of Houston}}
+
+{$\ \bullet$}Paper: R. Vilalta, \textbf{R. Sutrisno}, E. E. O. Ishida, R. Beck, R. S. de Souza, A. Mahabal,
+``\textit{Photometric Redshift Estimation: An Active Learning Approach}'' IEEE SSCI 2017.
+
+    $\ \ \bullet$ Tasked with implementing "Query By Committee" active machine learning algorithms from research papers for galaxy distance estimation using photometric astronomical data.
+
+    & \textbf{Summer 2017}
+
+
+\end{tabular}
+\end{flushleft}
+
+
+\section{Publications}
+\noindent \textbullet R. Vilalta, \textbf{R. Sutrisno}, E. E. O. Ishida, R. Beck, R. S. de Souza, A. Mahabal:
+``\textit{Photometric Redshift Estimation: An Active Learning Approach}'' IEEE SSCI 2017
+
+
+\section{Awards}
+\subsection{University of Houston Deans List}
+\subsection{HP CodeWars 2016 3rd Place, \textit{Hewlett Packard} March 2016}
+HP Code Wars Computer Science Competition in Houston, TX
+
+\end{document}
+
