@@ -2,14 +2,13 @@
 \documentclass{article}
 \usepackage{titlesec}
 \usepackage{titling}
-\usepackage[papersize={8.5in,11in},margin=1in]{geometry}
+\usepackage[papersize={8.5in,11in},margin=0.5in]{geometry}
 
 \hyphenpenalty=10000
 
 \pagenumbering{gobble}
 \titleformat{\section}
-{\large\bfseries} {}
-{0em}
+{\large\bfseries} {} {0em}
 {}[\titlerule]
 
 \titleformat{\subsection}
@@ -36,15 +35,12 @@
 \renewcommand{\maketitle}{
 \begin{center}
 {\Large\bfseries\theauthor}
-\vspace{.25em}
-
 \begin{center}
 \begin{tabular}{ r l c r l }
  \textbf{email} & raymond@sutrisno.me & --- & \textbf{phone} & 909 706 1288 \\
- \textbf{github} & tetrovolt & --- & \textbf{linkedin} & in/tetrovolt
+ \textbf{github} & tetrovolt & --- & \textbf{website} & tetrovolt.github.io
 \end{tabular}
 \end{center}
-
 \end{center}
 }
 
@@ -56,34 +52,46 @@
 \maketitle
 
 \section{Education}
-\subsection{University of Houston (2016 - 2020) \textbf{GPA}{3.94}}
-\textbf{Major}: Bachelors of Computer Science, \textbf{Minor}: Mathematics
+\subsection{University of Houston (2016 - 2020)}
+\textbf{Major}: Bachelors of Computer Science,
+\textbf{Minor}: Mathematics,
+\textbf{GPA} {3.85}
 
 \section{Skills}
 \begin{tabular}{p{5cm} l}
-    \textbf{Front-End Technologies} & HTML, CSS \\
-    \textbf{Back-End Technologies} & NodeJS, Express, Postgresql \\
-    \textbf{Machine Learning} & ScikitLearn, Keras, Tensorflow, numpy, pandas, OpenCV \\
     \textbf{Programming Languages} & Python, Java, C++, JavaScript  \\
-    \textbf{Tools} & bash, git, make, linux/unix, \LaTeX, matlab
+    \textbf{Web-Dev} & HTML, CSS, NodeJS, ExpressJS, Postgresql, Jekyll \\
+    \textbf{Tools} & bash, git, docker, make, linux/unix, \LaTeX, matlab \\
+    \textbf{Machine Learning} & ScikitLearn, Keras, Tensorflow, numpy, pandas, OpenCV
 \end{tabular}
 
-\section{Projects Experience}
+\section{Projects}
 \begin{flushleft}
-\begin{tabular}{p{13.5cm} p{2.5cm}}
+\begin{tabular}{p{15.5cm} p{2.5cm}}
+
+\noindent{Vision Tracking module for UH autonomous drone team}
+
+\noindent{$\ \bullet$} ImageNet based convolutional classifier for identifying
+ground targets for autonomous drone competition.
+
+    & \textbf{Spring 2018} \\
+
+\noindent{Keegan's Korner}
+
+\noindent{$\ \bullet$} 4chan like image board built using expressJS and Postgresql backend.
+
+    & \textbf{Spring 2018} \\
+
 
 \noindent{Reamer IP Bot}
 
 \noindent{$\ \bullet$} Discord bot used for WAN ip retrieval for house.
 
-\noindent{$\ \bullet$} Used to circumvent needing a static ip business plan from internet provider.
-
 \noindent{$\ \bullet$} Works as both a discord bot with command and a http server with JSON api.
-
-\noindent{$\ \bullet$} \textbf{project-link:} github.com/TetroVolt/ReamerHouseBot
 
     & \textbf{Fall 2018} \\
 
+\iffalse{
 \noindent{Java Ray Tracer}
 
 \noindent{$\ \bullet$} Ray tracer rendering demo written Java.
@@ -102,27 +110,15 @@ regex for tokenization. Uses reverse polish notation.
 \noindent{$\ \bullet$}\textbf{project-link:} "github.com/TetroVolt/Expressions
 
     & \textbf{Spring 2017} \\
+}\fi
 
 \end{tabular}
 \end{flushleft}
 
-\clearpage
+
 \section{Job Experience}
 \begin{flushleft}
-\begin{tabular}{p{13.5cm} p{2.5cm}}
-{$\bullet$}\textbf{Teaching Assistantships, \textit{University of Houston}}
-
-    $\ \ \bullet$ \textbf{(Spring 2019)} Advanced Machine Learning (for Graduates) 
-
-    $\ \ \bullet$ \textbf{(Fall 2018)}  Introduction to Computer Science (for Undergrads) 
-
-    $\ \ \bullet$ \textbf{(Spring 2018)} Artificial Intelligence (for Undergrads) 
-
-    $\ \ \bullet$ \textbf{(Fall 2017)}  Machine Learning (for Graduates) 
-
-    &
-    \textbf{Various} \\[0.75cm]
-
+\begin{tabular}{p{15.5cm} p{2.5cm}}
 
 {$\bullet$}\textbf{NSF Research Assistant Internship, \textit{University of Houston}}
 
@@ -138,8 +134,7 @@ regex for tokenization. Uses reverse polish notation.
     $\ \ \bullet$ \textbf{project-link}: github.com/gtoti/Summer2018REU
 
     & \textbf{Summer 2018}
-    \\[0.75cm]
-
+    \\[1.00cm]
 
 {$\bullet$}\textbf{Research Assistant, \textit{University of Houston}}
 
@@ -149,8 +144,20 @@ regex for tokenization. Uses reverse polish notation.
 ``\textit{Photometric Redshift Estimation: An Active Learning Approach}'' IEEE SSCI 2017.
 
 
-    & \textbf{Summer 2017}
+    & \textbf{Summer 2017} \\
 
+{$\bullet$}\textbf{Teaching Assistantships, \textit{University of Houston}}
+
+    $\ \ \bullet$ \textbf{(Spring 2019)} Advanced Machine Learning (for Graduates) 
+
+    $\ \ \bullet$ \textbf{(Fall 2018)}  Introduction to Computer Science (for Undergrads) 
+
+    $\ \ \bullet$ \textbf{(Spring 2018)} Artificial Intelligence (for Undergrads) 
+
+    $\ \ \bullet$ \textbf{(Fall 2017)}  Machine Learning (for Graduates) 
+
+    &
+    \textbf{Recurring} \\[1.00cm]
 
 \end{tabular}
 \end{flushleft}
