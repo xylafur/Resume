@@ -1,3 +1,5 @@
 *.aux
 *.log
-makefile
+*.dvi
+.*.sw*
+.*.un*
